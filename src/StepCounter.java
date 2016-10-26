@@ -3,7 +3,7 @@ public class StepCounter {
 		String[] columnNames={"time", "gyro-x", "gyro-y", "gyro-z"};
 		CSVData test = new CSVData("E:\\Shaina\\11th grade\\AP Comp Sci\\GyroTest2out.csv", columnNames, 1);
 		
-		System.out.println(countSteps(test.getCol(0),test.getRows(1,test.getNumRows()-1)));
+		System.out.println(countSteps(test.getColumn(0),test.getRows(1,test.getNumRows()-1)));
 	}
 	private static int countSteps(double[] times, double[][] sensorData) {
 		int stepCount = 0;
@@ -29,9 +29,9 @@ public class StepCounter {
 	private static double[] calculateMagnitudes(double[][] sensorData) {
 		double[] result = new double[sensorData.length];
 		for(int i = 0; i < sensorData.length; i++) {
-			double x = sensorData[i][0];
-			double y = sensorData[i][1];
-			double z = sensorData[i][2];
+			double x = sensorData[i][1];
+			double y = sensorData[i][2];
+			double z = sensorData[i][3];
 			result[i] = calculateMagnitude(x,y,z);
 		}
 		return result;
