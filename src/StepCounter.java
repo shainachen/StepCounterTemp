@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StepCounter {
 	public static void main(String[] args) {
 		String[] columnNames={"time", "gyro-x", "gyro-y", "gyro-z"};
@@ -9,6 +11,9 @@ public class StepCounter {
 		int stepCount = 0;
 		double[] arr = new double[times.length];
 		arr = calculateMagnitudes(sensorData);
+		System.out.println(Arrays.toString(arr));
+		arr = NoiseSmoothing.generalRunningAverage(arr, 3);
+		System.out.println(Arrays.toString(arr));
 		double mean = calculateMean(arr);
 		double deviation = calculateStandardDeviation(arr, mean);
 		System.out.println(mean+deviation);
@@ -23,6 +28,21 @@ public class StepCounter {
 		
 		return stepCount;
 	}
+	
+/*	public static double[] calculateWindow(double[] arr, int windowLength) {
+		result = array of threshold values, with interval windowLength
+		calculate mean for windowlength
+		calculate deviation for windowlength
+		add mean and deviation together
+		return result
+	}*/
+	
+	public static double[] noiseSmoothing(double[] magnitudes, int averageLength) {
+		double[] result = new double[magnitudes.length-averageLength];
+		result = NoiseSmoothing.generalRunningAverage(magnitudes, averageLength);
+		return result;
+	}
+	
 	public static double calculateMagnitude(double x, double y, double z) {
 		return Math.sqrt(x*x + y*y + z*z);
 	}
