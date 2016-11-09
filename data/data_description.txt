@@ -5,7 +5,7 @@
 -subject_gender:M
 -gait:comfortable_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 ***********************************
@@ -16,7 +16,7 @@
 -subject_gender:M
 -gait:mixed_stairs
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 -note:5 step walk, 2 steps up, 2 steps down, 5 step walk
@@ -28,7 +28,7 @@
 -subject_gender:M
 -gait:jog
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 ***********************************
@@ -39,7 +39,7 @@
 -subject_gender:F
 -gait:mixed_stairs
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/6/16
 -note:5 step walk, 2 steps up, 2 steps down, 5 step walk
@@ -51,7 +51,7 @@
 -subject_gender:F
 -gait:comfortable_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/4/16
 ***********************************
@@ -62,7 +62,7 @@
 -subject_gender:F
 -gait:comfortable_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/4/16
 ***********************************
@@ -73,7 +73,7 @@
 -subject_gender:F
 -gait:jog
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/6/16
 ***********************************
@@ -84,7 +84,7 @@
 -subject_gender:M
 -gait:stairs
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 ***********************************
@@ -95,7 +95,7 @@
 -subject_gender:F
 -gait:stairs
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/4/16
 ***********************************
@@ -106,7 +106,7 @@
 -subject_gender:M
 -gait:slow_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 ***********************************
@@ -117,7 +117,7 @@
 -subject_gender:F
 -gait:slow_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Jannick Mueller
 -date:11/4/16
 ***********************************
@@ -128,7 +128,7 @@
 -subject_gender:M
 -gait:comfortable_walk
 -phone_location:right_side_pocket
--data_log_freq:100
+-data_log_freq:10
 -collection_supervisor:Shaina Chen
 -date:11/4/16
 ***********************************
