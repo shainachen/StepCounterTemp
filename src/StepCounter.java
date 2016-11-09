@@ -5,7 +5,7 @@ public class StepCounter {
 		String[] columnNames={"time", "gyro-x", "gyro-y", "gyro-z"};
 		CSVData test = new CSVData("data/64StepsInPocketJogging-out.csv", columnNames, 1);
 		test.correctTime(test);
-		System.out.println(countSteps(test.getColumn(1),test.getRows(1,test.getNumRows()-1), 10));
+		System.out.println(countSteps(test.getCol(1),test.getRows(1,test.getNumRows()-1), 10));
 	}
 	
 	private static int countSteps(double[] times, double[][] sensorData, int windowLength) {
